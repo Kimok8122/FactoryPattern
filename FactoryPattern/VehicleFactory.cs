@@ -12,12 +12,13 @@ namespace FactoryPattern
 
                 case 2:
                     return new Motorcycle();
+                       
 
                 case 3:
                     return new ThreeWheeler();
 
                 default:
-                    return new Car();
+                    return new Default();
 
 
  

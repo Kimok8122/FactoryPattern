@@ -14,10 +14,12 @@ namespace FactoryPattern
 
                 input = int.TryParse(Console.ReadLine(), out numberOfWheels);
 
-            } while (!input);
+            } while (input == false);
 
 
             var vehicle = VehicleFactory.GetVehicle(numberOfWheels);
+
+            vehicle.Drive();
 
             
         
